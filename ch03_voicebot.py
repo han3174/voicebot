@@ -9,10 +9,11 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-api_key = os.getenv("OPENAI_API_KEY")
-client = OpenAI(api_key=api_key)
+#api_key = os.getenv("OPENAI_API_KEY")
+OPENAI_API_KEY ='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'
+client = OpenAI(api_key=OPENAI_API_KEY)
 
-if "chat" not in st.session_state:
+if "chat" not in st.session_state:s
     st.session_state.chat = []
 
 if "messages" not in st.session_state:
